@@ -1,1 +1,3 @@
 # Using-RandomForest-to-evaluate-variable-importance
+
+This R code performs data preprocessing, builds predictive models using Random Forest for multiple target variables (c19ProSo01, c19ProSo02, c19ProSo03, c19ProSo04), and evaluates their performance. It first removes irrelevant columns and replaces missing values with column medians. Then, it trains a Random Forest model for each target variable, tunes the mtry (number of predictors at each split) using the tuneRF() function, and re-trains with the optimal mtry. Variable importance is evaluated and visualized using importance() and varImpPlot(). The process is repeated for each target variable in the dataset.
